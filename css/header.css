@@ -1,0 +1,111 @@
+.header__section {
+    margin-bottom: 246px;
+}
+
+.header__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 520px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 27px;
+    margin-bottom: 30px;
+    align-items: center; /*елементы выравниваются по центру*/
+}
+
+.header__col {
+    display: flex;
+    align-items: center;
+}
+
+.header__col--align--right {
+    justify-content: flex-end; /*элементы выравниваются справа*/
+}
+
+.logo {
+    display: block;
+    left: 0px;
+    margin-right: 77px;
+}
+
+.menu {
+    top: 10px;
+    left: 164px;
+}
+
+/*.menu__item--active .menu__link { активная ссылка
+    color: #f5250e;
+}*/
+
+.menu__item:last-child { /*убрать отступ у последнего элемента*/
+    margin-right: 0;
+}
+
+.menu__item {
+    display: inline-block; /*элементы выстраивались в строку*/
+    vertical-align: middle; /*выравнивание друг относительно друга по вертикали*/
+    margin-right: 54px; /*расстояние между элементами*/
+}
+
+.menu__link {
+    font-size: 14px;
+    text-decoration: none; /*убрать поддчеркивание*/
+}
+
+.menu__link:hover { /*цвет при наведении курсором (:hover псевдоселектор)*/
+    color: #DA0100; /*но в макете background нужно подсвечивать*/
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.contacts__phone {
+    font-size: 26px;
+    text-decoration: none; /*убрать подчеркивание*/
+    font-style: normal;
+    font-weight: normal;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-flex;
+    justify-content: flex-end;
+}
+
+.dropdown:hover .dropdown__menu {
+    display: block;
+}
+
+.contacts__dropdown-title {
+    font-size: 13px;
+    text-decoration:underline; /*подчеркивание*/
+    font-style: normal;
+}
+
+.dropdown__menu {
+    position: absolute;
+    width: 160px;
+    height: 80px;
+    background: url(../img/dd.png) no-repeat;
+    text-align: center;
+    top: 100%;
+    display: none;
+}
+
+.dropdown__list {
+    font-style: normal;
+    color: #1E1F20;
+    font-size: 13px;
+    margin-top: 25px;
+}
+
+.dropdown__item:first-child {
+    font-weight: bold;
+}
